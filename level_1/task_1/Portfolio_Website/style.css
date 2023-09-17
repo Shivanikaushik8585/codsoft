@@ -1,19 +1,28 @@
 *{
-    margin: 6px;
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
 }
 header{
-    position:fixed;
+    position:sticky;
     width: 100%;
     top:0;
     left:0;
-    /* background-color: rgb(149, 149, 215); */
+    padding:  5px;
+    background-color:white;
     /* border-radius: 15%; */
+    z-index: 2;
 }
 .nav{
-    height: 12vh;
+    height: 8vh;
     display: flex;
     justify-content: space-between;
     align-items: center;
+    
+}
+.nav_logo{
+    font-size:1.25rem;
+    color: black;
 }
 
 .nav_close,.bar{
@@ -32,15 +41,21 @@ header{
         transition:  right .4s;
         width: 80%;
         height: 100%;
-        box-shadow:-1px 0 16px hsla(0,0%,0%,.1)
+        box-shadow:-1px 0 16px hsla(0,0%,0%,.1);
+        
+        background-color: white;
+    
         
     }
+   
+   
 }
     .nav_list{
         display: flex;
         flex-direction: column;
         row-gap:2.5rem;
     }
+    
     .nav_item{
         color: grey;
         font-family:'Courier New', Courier, monospace
@@ -63,15 +78,48 @@ header{
  li{
     list-style: none;
  }
-  /* main */
- main {
-    margin-top: 12vh; 
-    padding: 20px;
-    background-color: #fff; 
-    position: relative;
-    z-index: 1; 
+   /* home */
+.home_container{
+position: relative;
+padding: 12px;
+
 }
+.title{
+    font-size: 2rem;
+    margin-bottom: .5rem;
+}
+
 .container{
-    display: flex;
-    flex-direction: row;
+    max-width: 1120px;
+    margin-inline: 1.5rem;
 }
+img{
+    display: block;
+    max-width: 100%;
+    height: auto;
+}
+.home_description{
+    font-size:1.15rem;
+    margin-bottom: 2rem;
+    color: grey;
+}
+.home_button{
+    display: inline-block;
+    background-color: white;
+    box-shadow: 0 8px 32px hsla(0,0%,0%,.1);
+    padding: 1rem 4rem;
+    border-radius: 4rem;
+    font-weight: 100;
+    font-size: 1.25rem;
+    color: black;
+    width: 50vw;
+    margin: 1rem 6rem;
+
+
+    
+}
+.home_button:hover{
+    box-shadow: 0 8px 32px hsla(0,0%,0%,.15);
+}
+
+
