@@ -1,4 +1,3 @@
-/* header */
 *{
     margin: 6px;
 }
@@ -64,3 +63,15 @@ header{
  li{
     list-style: none;
  }
+  /* main */
+ main {
+    margin-top: 12vh; 
+    padding: 20px;
+    background-color: #fff; 
+    position: relative;
+    z-index: 1; 
+}
+.container{
+    display: flex;
+    flex-direction: row;
+}
