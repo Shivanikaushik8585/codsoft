@@ -146,6 +146,9 @@ img{
         .home_data{
             text-align: center;
         }
+        .project_content{
+            display: row;
+        }
     }
     
   /* for large device */
@@ -197,5 +200,61 @@ img{
      }
 
   }
+  /* about */
+  .about_container{
+    height:100%;
+    width: 80%;
+    border: 2px solid black;
+    border-radius: 12px;
+    margin: 2rem 4rem;
+    padding: 2rem;
 
+  }
 
+  /* services */
+  .services_container{
+    grid-template-columns: 250px;
+    justify-content: center;
+    row-gap:2rem;
+    padding-top: 1 rem;
+    margin: 2rem 4rem;
+
+  }
+  .title{
+    text-align: center;
+  }
+  .services_card{
+    position: relative;
+  }
+  .services_content{
+    height: 100%;
+
+    box-shadow:3px 0 16px hsla(0,0%,0%,.16);
+    padding: 1rem 3rem;
+    margin: 2rem;
+    text-align: center;
+  }
+  .services_title{
+    font-size: 1.25rem;
+  }
+  .servoces_description{
+    color: grey;
+    font-size: 1rem;
+  }
+  /* project */
+  .project_container{
+    height: 100%;
+    box-shadow: 4px 0 17px hsla(0,0%,0%,.16);
+    width: 100vw;
+  }
+  .project_content{
+    padding:1rem;
+    border:1px  solid black;
+    margin:2rem;
+    border-radius: 12px;
+    display: flex;
+    flex-direction: column;
+  }
+p{
+    color: gray;
+}
