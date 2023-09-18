@@ -258,3 +258,48 @@ img{
 p{
     color: gray;
 }
+.form{
+    box-shadow: 4px 0 17px hsla(0,0%,0%,.16);
+    text-align: center;
+     
+}
+input{
+    width:70%;
+    height: 5vh;
+    border-radius: 12px;
+    text-align: center;
+}
+button{
+ width:20vw;
+ height: 4vh;
+ background-color: rgb(145, 145, 176);
+ margin-top: 1rem;
+ border-radius: 12px;
+ font-size: 22px;
+ color: white;
+}
+footer{
+    background-color: black;
+    color:white;
+    margin-top: 3rem;
+    
+}
+.fot_links{
+    display: flex;
+    justify-content: center;
+    column-gap: 2rem;
+    
+
+}
+
+.footer_link{
+    color: white;
+    
+}
+.name{
+    color: white;
+}
+.copy{
+    text-align: center;
+}
+
