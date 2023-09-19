@@ -24,6 +24,12 @@ header{
     font-size:1.25rem;
     color: black;
 }
+.active_link{
+    color:blue;
+}
+.active_link::after{
+    width:25%
+}
 
 .nav_close,.bar{
     display:flex;
@@ -200,6 +206,27 @@ img{
      }
 
   }
+  /* social */
+  .social{
+    text-align: center;
+  }
+  .socila_list{
+    display: flex;
+    justify-content: center;
+  }
+  .social_link{
+    padding: 23px;
+    font-size: 1.75rem;
+
+
+  }
+  i{
+    color: gray;
+  }
+
+  section{
+    padding-top: 4rem;
+  }
   /* about */
   .about_container{
     height:100%;
@@ -248,7 +275,7 @@ img{
     width: 100vw;
   }
   .project_content{
-    padding:1rem;
+    padding:3rem;
     border:1px  solid black;
     margin:2rem;
     border-radius: 12px;

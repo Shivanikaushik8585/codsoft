@@ -28,3 +28,21 @@ const linkAction =()=>{
 }
 
 navLinks.forEach(n=> n.addEventListener('click',linkAction));
+// active_link
+const sections=document.querySelectorAll('section[id]')
+const scrollactive =()=>{
+    const scrollDown = window.scrollY
+    sections.forEach(current =>{
+        const sectionHeight = current.offsetHeight,
+        sectionTop  = current.offsetTop-23,
+        sectionId = current.getAttribute('id'),
+        sectionclass= document.querySelector('.nav_links a[href*='+sectionId+']')
+        if(scrollDown>screenTop && scrollDown<=sectionTop +sectionHeight){
+            sectionclass.classList.add('active_link');
+        }else{
+            sectionclass.classList.remove('active_link');
+        }
+        
+    })
+    window.addEventListener('scroll',scrollactive)
+}
