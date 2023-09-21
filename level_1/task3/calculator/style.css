@@ -1,0 +1,53 @@
+.container{
+    border: 2px solid blue;
+    margin: 3rem;
+    padding: 2rem;
+    background-color: rgb(123, 123, 212);
+     border-radius: 30px;
+}
+
+input{
+    width: 70vw;
+    /* border: none; */
+    padding: 2rem;
+    border-radius: 20px;
+    font-size: large;
+    
+
+
+}
+.box{
+    width: 78vw;
+    display: grid;
+    border-radius: 25px;
+    background-color: lightcyan;
+    font-size: 24px;
+    border-radius: 20px;
+    padding: 2px;
+    
+    /* margin-left: 90px; */
+    grid-template-columns: repeat(4,auto);
+}
+.number{
+    border: 2px solid lightgreen;
+    padding: 2rem;
+    border-radius: 20px;
+    background-color: azure;
+    /* background-color:lightgray; */
+}
+.number:hover{
+    background-color: lightseagreen;
+    /* font-size: 2rem; */
+}
+.span-2{
+    grid-column: span 2;
+}
+.span-3{
+    grid-column: span 3;
+}
+.symbol{
+    background-color:lemonchiffon;
+}
+.symbol:hover{
+    background-color: orange;
+}
